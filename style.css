@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    bottom: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 4658px;
+    background-color: #292929;
+}
+
+:root {
+    --color-azul: #5280E2;
+    --color-azul-claro: #15CDCB;
+    --color-branco: #ffffff;
+}
+
+
+
+
+div .about-me {
+    margin: 50px 0 0 50px;
+    max-width: 623px;
+    color: var(--color-branco);
+    padding: 20px;
+    height: 305px;
+}
+
+h1,
+h2 {
+    color: var(--color-azul-claro);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 44px;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    height: 50px;
+    width: 235px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 38px;
+    background: #5280E2;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top:0
+    ;
+
+    max-width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 228px;
+}
+
+
+img {
+    width: 100px;
+}
+
+nav a {
+    cursor: pointer;
+    color: var(--color-azul-claro);
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav .ul-lista {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
+
+
+
+/* tablet */
+@media (max-width:1024px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-color: royalblue;
+    }
+
+}
+
+
+/* celular */
+@media (max-width:412px) {
+
+    body {
+    
+        width: 100%;
+        height: 4658px;
+        background-color: #292929;
+    }
+
+    header div.about-me {
+        margin: 50px 0 0 0;
+
+    }
+    img {
+        display: none;
+    }
+    nav {
+        width: 100%;
+        height: 60px;
+        position:fixed;
+        top:unset;
+        margin-top: 100px;
+        margin-left: 0;
+        background: var(--color-branco);
+
+    }
+
+    nav .ul-lista a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    svg {
+
+        margin-bottom:5px;
+    }
+
+
+}
