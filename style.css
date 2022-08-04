@@ -104,6 +104,11 @@ section div.about-me {
     height:100%;
     margin:20px;
 }
+div span.conteiner-image {
+    width:380px;
+    height:380px;
+    background:red;
+}
 
 
 
