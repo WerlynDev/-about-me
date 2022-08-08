@@ -19,7 +19,7 @@ body {
 }
 
 div .hello-my-name {
-    display:inline-block;
+    display: inline-block;
     margin: 50px 0 0 50px;
     max-width: 623px;
     color: var(--color-branco);
@@ -27,7 +27,8 @@ div .hello-my-name {
     height: 305px;
 }
 
-h1,h2 {
+h1,
+h2 {
     color: var(--color-azul-claro);
     margin-bottom: 20px;
 }
@@ -65,6 +66,7 @@ nav {
 }
 
 img {
+
     width: 100px;
 }
 
@@ -81,37 +83,107 @@ nav .ul-lista {
     width: 100%;
     list-style: none;
 }
-svg {
-    display:none;
+
+nav ul svg {
+    display: none;
 }
 
 .container-about-me {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 400px;
     margin-top: 150px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-left: 50px;
+    margin-right: 50px;
     /* background-color:rgb(255, 255, 255); */
 }
 
-section > div.about-me {
-    display:flex;
-    flex-direction:column;
-    max-width:50%;
-    height:100%;
-    margin:20px;
+section>div.about-me {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin: 20px;
 }
 
 div.conteiners-image {
-    text-align:center;
-    width:50%;
-}
-div > img {
-   
-    text-align:center;
-    width:500px;
+    width: 50%;
+    position: relative;
+    text-align: center;
 }
 
+div.conteiners-image img {
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div.conteiners-image .line {
+    position: absolute;
+    border: 1px solid var(--color-azul);
+    width: calc(70% + 40px);
+    height: calc(100% + 40px);
+    top: -20px;
+    left: calc(50% - 70%/2 - 20px);
+}
+
+div.conteiners-image .line.blue {
+    border: 1px solid var(--color-azul);
+    transform: rotate(-3.3deg);
+}
+
+div.conteiners-image .line.green {
+    border: 1px solid var(--color-azul-claro);
+}
+
+section.container-section {
+    max-width: 100%;
+    height: 593px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+section.container-section>h1 {
+    text-align: center;
+}
+
+section.container-section div.serviços {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+section.container-section div.serviços div.quadro-serviços {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--color-azul-claro);
+    max-width: 357px;
+    height: 464px;
+    background: #2F3034;
+}
+
+section.container-section div.serviços span.icon {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    background: rgba(33, 34, 38, 0.6);
+    margin-bottom:38px;
+}
+
+section.container-section div.serviços span.icon > svg {
+    color:var(--color-azul-claro);
+    width:35px;
+    height:35px;
+}
 
 
 
@@ -119,28 +191,26 @@ div > img {
 @media (max-width:1024px) {
     body {
         width: 100%;
-        height: 100%;
-        background-color: royalblue;
+        height: 4658px;
+        background-color: read-only;
     }
-
 }
 
 /* celular */
-@media (max-width:412px) {
+@media(max-width:412px) {
 
     body {
-
         width: 100%;
         height: 4658px;
         background-color: #292929;
     }
 
     header div.hello-my-name {
-        margin: 50px 0 0 0;
-
+        padding: 0;
+        margin: 50px 0 0 10px;
     }
 
-    img {
+    nav>img {
         display: none;
     }
 
@@ -152,7 +222,7 @@ div > img {
         margin-top: 100px;
         margin-left: 0;
         background: var(--color-branco);
-
+        z-index: 99;
     }
 
     nav .ul-lista a {
@@ -163,8 +233,43 @@ div > img {
     }
 
     svg {
-        display:initial;
+        display: initial;
         margin-bottom: 5px;
     }
+
+    section.container-about-me {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 0;
+    }
+
+    section div.about-me p {
+        font-size: 0.9rem;
+    }
+
+    section.container-about-me {
+        flex-direction: column;
+    }
+
+    section>div.about-me {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    div.conteiners-image {
+        width: 100%;
+
+    }
+
+
+
+
+
+
+
+
+
 
 }
