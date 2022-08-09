@@ -152,6 +152,7 @@ section.container-section>h1 {
 section.container-section div.serviços {
     display: flex;
     justify-content: space-evenly;
+    text-align:center;
 
 }
 
@@ -170,20 +171,46 @@ section.container-section div.serviços div.quadro-serviços {
 
 section.container-section div.serviços span.icon {
     display: flex;
-    align-items:center;
-    justify-content:center;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
     width: 90px;
     height: 90px;
     background: rgba(33, 34, 38, 0.6);
-    margin-bottom:38px;
+    margin-bottom: 38px;
 }
 
-section.container-section div.serviços span.icon > svg {
-    color:var(--color-azul-claro);
-    width:35px;
-    height:35px;
+section.container-section div.serviços span.icon>svg {
+    color: var(--color-azul-claro);
+    width: 35px;
+    height: 35px;
 }
+
+section.container-section-portfolio {
+    width:100%;
+    height:760px;
+    background: #15CDCB;
+}
+section.container-section-portfolio .container-quadros-portfolio{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+
+
+section.container-section-portfolio div.quadros-portfolio {
+    max-width:460px;
+    height:370px;
+    background:var(--color-branco);
+
+}
+
+
+
+
+
+
 
 
 
@@ -260,16 +287,5 @@ section.container-section div.serviços span.icon > svg {
 
     div.conteiners-image {
         width: 100%;
-
     }
-
-
-
-
-
-
-
-
-
-
 }
