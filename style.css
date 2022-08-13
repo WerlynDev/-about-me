@@ -152,7 +152,7 @@ section.container-section>h1 {
 section.container-section div.serviços {
     display: flex;
     justify-content: space-evenly;
-    text-align:center;
+    text-align: center;
 
 }
 
@@ -187,26 +187,45 @@ section.container-section div.serviços span.icon>svg {
 }
 
 section.container-section-portfolio {
-    width:100%;
-    height:760px;
-    background: #15CDCB;
+    max-width: 100%;
+    height: 760px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    position:relative;
 }
-section.container-section-portfolio .container-quadros-portfolio{
-    display:flex;
-    justify-content:space-evenly;
+
+section.container-section-portfolio .container-quadros-portfolio {
+    display: flex;
+    justify-content: space-evenly;
 }
-
-
-
 
 section.container-section-portfolio div.quadros-portfolio {
-    max-width:460px;
-    height:370px;
-    background:var(--color-branco);
-
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--color-azul-claro);
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 357px;
+    height: 464px;
 }
 
+section.container-section-portfolio>h1 {
+    text-align: center;
+}
 
+div.quadros-portfolio img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+div.quadros-portfolio div.lines {
+    width: calc(100% + 20px);
+    height: 230px;
+    border: 1px solid var(--color-azul-claro);
+    position:absolute;
+
+}
 
 
 
