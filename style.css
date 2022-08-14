@@ -187,17 +187,21 @@ section.container-section div.serviços span.icon>svg {
 }
 
 section.container-section-portfolio {
-    max-width: 100%;
-    height: 760px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 100px;
-    position:relative;
-}
+    width: 100%;
+    height: 800px;
+    background-image: url("image/bg.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
 
+
+} 
 section.container-section-portfolio .container-quadros-portfolio {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+
 }
 
 section.container-section-portfolio div.quadros-portfolio {
@@ -209,21 +213,34 @@ section.container-section-portfolio div.quadros-portfolio {
     height: 464px;
 }
 
+
 section.container-section-portfolio>h1 {
     text-align: center;
 }
 
+div.container-imag {
+    width: 100%;
+    height: 195px;
+    position: relative;
+    margin-bottom: 38px;
+}
+
 div.quadros-portfolio img {
     width: 100%;
-    height: 50%;
-    object-fit: contain;
-    margin-bottom: 10px;
+    height: 195px;
 }
+
 div.quadros-portfolio div.lines {
-    width: calc(100% + 20px);
-    height: 230px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: calc(0% - 5px);
+    left: calc(0% - 5px);
     border: 1px solid var(--color-azul-claro);
-    position:absolute;
+    position: absolute;
+}
+
+div.quadros-portfolio span {
+    border: 1px solid var(--color-azul-claro);
 
 }
 
