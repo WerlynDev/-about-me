@@ -8,7 +8,7 @@
 
 body {
     width: 100%;
-    height: 4658px;
+    height: fit-content;
     background-color: #292929;
 }
 
@@ -145,7 +145,8 @@ section.container-section {
     margin-top: 100px;
 }
 
-section.container-section>h1 {
+section.container-section>h1,
+section.container-curriculo>h1 {
     text-align: center;
 }
 
@@ -188,13 +189,13 @@ section.container-section div.serviços span.icon>svg {
 
 section.container-section-portfolio {
     width: 100%;
-    height: 800px;
+    height: 700px;
     background-image: url("image/bg.png");
-    background-repeat:no-repeat;
-    background-size: 100%;
+    top: -600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-
-} 
 section.container-section-portfolio .container-quadros-portfolio {
     display: flex;
     justify-content: space-evenly;
@@ -240,10 +241,82 @@ div.quadros-portfolio div.lines {
 }
 
 div.quadros-portfolio span {
+    display: inline-block;
+    color: var(--color-azul-claro);
     border: 1px solid var(--color-azul-claro);
+    border-radius: 16px;
+    width: 64px;
+    height: 22px;
+    text-align: center;
+}
+
+div.quadros-portfolio p {
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+section.container-curriculo {
+
+    max-width: 100%;
+    height: 593px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
 
 }
 
+div.lista-grid {
+    color: var(--color-branco);
+    height: 400px;
+    display: grid;
+    grid-template-columns: 200px 250px;
+    justify-content: end;
+}
+
+section.container-curriculo img {
+    width: 500px;
+    height: 500px;
+}
+
+div.container-curriculo-todo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    max-width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer span {
+    display:flex;
+    justify-content:space-evenly;
+    width:300px;
+    margin: 20px 0;
+}
+
+footer h1 {
+    background: linear-gradient(180deg, #15CDCB 0%, #5280E2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+footer span svg {
+
+    color:var(--color-azul-claro);
+    width: 40px;
+    height: 40px;
+
+}
+
+footer p.cinza {
+    margin-top:100px;
+    color:#8b8b8b;
+}
 
 
 
